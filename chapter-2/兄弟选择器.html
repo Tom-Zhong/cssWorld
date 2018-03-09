@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>兄弟选择器</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        ul {
+            margin: 0 auto;
+        }
+        li {
+            float: left;
+            width: 100px;
+            height: 200px;
+            background: #f00;
+        }
+        li~li {
+            margin-left: 50px;
+        }
+    </style>
+</head>
+<body>
+    <!-- 利用这个元素，就很好处理了每个元素有左边边距的问题，第一个元素是不会产生左边的外边距的 -->
+    <ul>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+        <li>5</li>
+    </ul>
+</body>
+</html>

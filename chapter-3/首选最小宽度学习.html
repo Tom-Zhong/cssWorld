@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>首选最小宽度</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        .father {
+            width: 0;
+            background: #00f;
+        }
+        .son {
+            background: #f00;
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+    <!-- 由图可见，当外部容器宽度为零的时候，里面包含的inline-block元素会以首选最小宽度显示 -->
+    <div class="father">
+        <div class="son">我是一直小小鸟</div>
+    </div>
+    <div class="father">
+        <div class="son">I am English</div>
+    </div>
+    <div class="father">
+        <div class="son">我是一直小小鸟I am English</div>
+    </div>
+    <div class="father">
+        <div class="son">
+            075786866
+            18333649251
+        </div>
+    </div>
+</body>
+</html>

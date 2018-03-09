@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>list-item学习</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        div {
+            margin: 0 auto;
+            display: list-item;
+            width: 100px;
+            height: 100px;
+            background-color: #00f;
+        }
+    </style>
+</head>
+<body>
+    <!-- 不要使用list-item去清除浮动，因为在IE下兼容性不好，这个展示的属性会制造出一个marker-box，所以IE可能是无法创建这个标记盒子 -->
+    <!-- 具体可查官网https://www.w3.org/TR/2011/REC-CSS2-20110607/ -->
+    <div>
+        li
+    </div>
+</body>
+</html>

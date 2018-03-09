@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>inline元素</title>
+    <style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    body {
+        overflow: hidden;
+    }
+
+    input[type],
+    img,
+    span,
+    sup,
+    sub,
+    textarea,
+    iframe {
+        padding: 20px 30px;
+        margin: 45px 60px;
+        height: 100px;
+        width: 400px;
+    }
+    </style>
+</head>
+
+<body>
+    <div>
+        <!-- inline元素无法直接设置高度，替换元素可以但是能通过padding-top和padding-bottom挤压盒子改变高度，通过padding-left和padding-right也是可用的。margin全部也是可用的,仅限于替换元素。只是无法设置高度，当然，宽度是可以设置的 -->
+        <sup>我喔喔是一个inline元素</sup>
+        <span>我是一个inline元素</span>
+        <sub>我也是一个行内元素</sub>
+        <input type="text">
+        <img src="https://ss0.baidu.com/6ONWsjip0QIZ8tyhnq/it/u=397713855,3678230269&fm=173&s=78E1A746E2652B0FB211E4270300F04B&w=218&h=146&img.JPEG" alt="">
+        <textarea name="textarea" id="" cols="30" rows="10"></textarea>
+        <iframe src="http://www.java1234.com/" frameborder="0"></iframe>
+    </div>
+</body>
+
+</html>
